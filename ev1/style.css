@@ -1,0 +1,427 @@
+:root {
+    /*Primary*/
+
+    --blue: hwb(226 30% 3%);
+    --White: hsla(176, 73%, 96%, 0.884);
+    --skin: hsl(49, 61%, 74%);
+
+    /*Neutral*/
+
+    --green: hsla(138, 51%, 69%, 0.699);
+    --cyan: hsl(199, 52%, 72%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--White);
+}
+
+h1{ font-size: 3em;}
+h2{ font-size: 2.5em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.5em;}
+span{ font-size: 1.5em;}
+
+.cabecera {
+    background-color: var(--cyan);
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.cabecera-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.cabecera-left img{
+    width: 60px;
+}
+
+.cabecera-right {
+    display: flex;
+    align-content: flex-end;
+}
+.cabecera-right b {
+    display: none;
+}
+.cabecera-right a{
+    background-color: var(--blue);
+    text-decoration: none;
+    color: white;
+    padding: 15px 35px;
+    box-shadow: 3px 3px 15px gray;
+    border-radius: 5px;
+}
+.cabecera-right a:hover, .segundo a:hover{
+    background-color: rgb(0, 140, 255);
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.segundo{
+    background-color: var(--skin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+.segundo-header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 20px;
+    margin-bottom: 0px;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.segundo-header img{
+    width: 80px;
+}
+
+.segundo-body{
+    display: flex;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+
+.boton{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.segundo a{
+    background-color: var(--blue);
+    text-decoration: none;
+    color: white;
+    padding: 15px 35px;
+    box-shadow: 3px 3px 15px gray;
+    border-radius: 5px;
+}
+
+.primero{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+.primero img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.tercero{
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+.tercero-header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 20px;
+    margin-bottom: 0px;
+    max-width: 500px;
+}
+
+.tercero-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 80px 20px 80px;
+}
+
+.cuarto{
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+.cuarto img{
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.stars{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .tarjeta1, .tarjeta2, .tarjeta3{
+        background-color: var(--White);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+        width: 100%;
+        box-shadow: 0px 0px 5px 2px gray;
+    }
+
+    .card-1, .card-2, .card-3{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 40px 60px 40px 60px;
+        box-shadow: 0px 0px 5px 2px gray;
+        border-radius: 15px;
+        height: 23rem;
+    }
+
+    .card-header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: auto;
+        margin-top: 15px;
+    }
+    .card-header img{
+        width: 50px;
+        border-radius: 100px;
+        margin-top: 10px;
+    }
+
+    .card-header h3{
+        margin-top: 5px;
+    }
+
+    .text{
+        display: flex;
+        justify-content: center;
+        margin: 60px;
+        margin-bottom: auto;
+    }
+
+
+
+    .footer{
+        background-color: var(--White);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+        width: 100%;
+        box-shadow: 0px 0px 5px 2px gray;
+    }
+
+    .footer-left{
+        display: flex;
+        justify-content: start;
+        margin-top: 70px;
+    }
+    .redes{
+        background-color: white;
+        display: flex;
+        justify-content: start;
+        gap: 5px;
+    }
+    .redes img{
+        width: 40px;
+        height: auto;
+        margin: 5px 10px;
+        font-size: 1.2em;
+    }
+    .footer-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: 50px;
+    }
+
+    .footer-right h3{
+        color: blue;
+        text-decoration: underline;
+        margin-top: 60px;
+        margin-bottom: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .cabecera-right{
+        display: flex;
+        gap: 10px;
+    }
+    .cabecera-right b {
+        display: flex;
+        background-color: white;
+        text-decoration: none;
+        padding: 15px 68px;
+        box-shadow: 3px 3px 15px gray;
+        border-radius: 5px;
+    }
+
+    .contenido{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .primero {
+        order: 1;
+    }
+    .segundo {
+        order: 2;
+    }
+    .tercero {
+        order: 3;
+    }
+    .cuarto {
+        order: 4;
+    }
+
+    .segundo,.primero,.tercero{
+        height: 50vh;
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+    }
+    .cuarto{
+        height: 50vh;
+        width: auto;
+    }
+
+    .primero img{
+    max-width: 100%;
+    height: 100%;
+    }
+    .segundo-header, .segundo-body, .segundo a{
+        margin-left: 50px;
+        margin-bottom: 10px;
+        margin-top: auto;
+    }
+
+    .tercero-header, .tercero-body{
+        margin-left: 50px;
+        margin-bottom: auto;
+        max-height: 50vh;
+    }
+    
+    .cuarto img{
+        width: 70%;
+        height: 70%;
+        margin: 0%;
+        margin-top: 30px;
+        border-radius: 5px;
+    }
+    .stars{
+        display: flex;
+        gap: 50px;
+    }
+    .stars img{
+        width: 40px;
+    }
+
+    .tarjetas{
+        display: flex;
+        gap: 80px;
+        margin: 60px 20px 20px 20px;
+    
+    }
+
+    .card-1, .card-2, .card-3{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 5px 2px gray;
+        border-radius: 15px;
+        height: 25rem;
+    }
+    .card-header{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        gap: 10px;
+    }
+    .card-header img{
+        width: 90px;
+        height: 90px;
+        border-radius: 100px;
+    }
+
+    .text{
+        display: flex;
+        margin: 40px 20px 20px 20px;
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 80px 50px 100px 60px;
+    }
+
+    .footer-left{
+        order: 1;
+    }
+    .footer-center{
+        order: 2;
+    }
+    .footer-right{
+        order: 3;
+    }
+    
+    .footer-left{
+        display: flex;
+        justify-content: start;
+        margin-bottom: 50px;
+    }
+    .redes{
+        display: flex;
+        justify-content: start;
+        gap: 5px;
+    }
+    .redes img{
+        width: 40px;
+        height: auto;
+        margin: 0px 5px;
+        font-size: 1.2em;
+    }
+    .footer-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        margin-bottom: auto;
+    }
+
+    .footer-right{
+        display: flex;
+        justify-content: end;
+        margin-bottom: 50px;
+    }
+    .footer-right h3{
+        color: blue;
+        text-decoration: underline;
+    }
+
+}                                                   
