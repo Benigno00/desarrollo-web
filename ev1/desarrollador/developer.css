@@ -52,8 +52,9 @@ p { font-size: 1em; }
     font-weight: 100;
 }
 
-.tarjeta p {
+.tarjeta ul {
     text-align: justify;
+    margin-left: 80px;
 }
 
 .redes{
